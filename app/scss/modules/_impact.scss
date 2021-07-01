@@ -1,0 +1,55 @@
+.impact {
+    background-color: $color-tangaroa;
+    background-image: url(../assets/images/impact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__content {
+        padding: 112px 0 212px;
+        position: relative;
+    }
+    &__img {
+        max-width: 498px;
+        position: absolute;
+        top: -114px;
+        right: 0;
+    }
+    &__title {
+        max-width: 411px;
+        margin-bottom: 79px;
+    }
+    &__item {
+        &-img {
+            width: 76px;
+            height: 76px;
+        }
+        &-content {
+            margin-left: 12px;
+        }
+        &-title {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            color: $color-milano-red;
+            margin-bottom: 3px;
+        }
+
+    }
+    &__info {
+        background-color: $color-white;
+        position: relative;
+        bottom: -88px;
+        padding: 43px 76px 48px 70px;
+        &-title {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 30px;
+            color: $color-tangaroa;
+            max-width: 562px;
+        }
+    }
+}

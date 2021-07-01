@@ -3,7 +3,20 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 24px;
     color: $color-white;
-    border-radius: 5px;
+    padding: 9px 45px 9px 10px;
+    background-color: $color-milano-red;
+    letter-spacing: 0.15px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        background-image: url(../assets/icons/button-arrow.svg);
+        top: 15px;
+        right: 14px;
+    }
 }

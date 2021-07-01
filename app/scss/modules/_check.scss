@@ -1,0 +1,47 @@
+.check {
+    background-color: $color-wild-sand;
+    background-image: url(../../assets/images/services-right-bottom.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 236px;
+    &__inner {
+        padding: 100px 87px 0;
+        background-color: $color-white;
+        position: relative;
+        top: -80px;
+        max-height: 700px;
+    }
+    &__title {
+        margin-bottom: 55px;
+    }
+    &__items {
+        margin: 0 -10px;
+    }
+    &__item {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-tundora;
+        margin-bottom: 55px;
+        &-link {
+            font-family: $font-normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: $color-tangaroa;
+            padding: 0 48px 15px; 
+            transition: all .5s;
+            &:hover {
+                color: $color-milano-red;
+                border-bottom: 4px solid $color-milano-red;
+            }
+        }
+    }
+    &__content {
+        &-img {
+            max-width: 846px;
+        }
+    }
+}

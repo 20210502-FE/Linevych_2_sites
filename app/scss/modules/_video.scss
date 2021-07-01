@@ -1,0 +1,18 @@
+.video {
+    background-image: url(../assets/images/video-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    &_height {
+        height: 100%;
+    }
+    &__title {
+        max-width: 411px;
+    }
+    &__btn {
+        &-img {
+            max-width: 140px;
+        }  
+    }
+}

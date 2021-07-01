@@ -1,0 +1,30 @@
+.comment {
+    background-color: $color-wild-sand;
+    &__items {
+        margin: 0 12px;
+        padding-bottom: 224px;
+    }
+    &__item {
+        background-color: $color-white;
+        margin: 0 12px;
+        padding: 45px 44px 40px;
+        &-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 17px;
+        }
+        &-name {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: $color-tangaroa;
+        }
+    }
+    &__text {
+        margin-bottom: 18px;
+    }
+}

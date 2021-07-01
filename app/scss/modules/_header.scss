@@ -1,0 +1,113 @@
+.header {
+    background-image: url(../assets/images/banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: $color-white;
+    &__top {
+        padding-top: 35px;
+        &-content {
+            margin-bottom: 28px;
+        }
+    }
+    &__service {
+        padding-left: 34px;
+        position: relative;
+        &-hours::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-image: url(../assets/icons/header-clock.svg);
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+        }
+        &-call {
+            margin: 0 32px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                background-image: url(../assets/icons/header-phone.svg);
+                background-repeat: no-repeat;
+                top: 0;
+                left: 0;
+            }
+        }
+        &-item {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: 0.15px;
+            color: $color-white;
+            &_tel {
+                font-family: $font-bold;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 22px;
+                letter-spacing: 0.15px;
+                color: $color-white;
+                transition: all .5s;
+                &:hover {
+                    color: $color-milano-red;
+                }
+            }
+        }
+    }
+    &__menu {
+        padding: 10px 39px 10px 19px;
+        background-color: $color-white;
+        margin-bottom: 126px;
+    }
+    &__item {
+        margin: 0 19px;
+        &-arrow {
+            padding-right: 12px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 12px;
+                height: 5px;
+                position: absolute;
+                background-image: url(../assets/icons/header-menu-arrow.svg);
+                background-repeat: no-repeat;
+                top: 6px;
+                right: -5px;
+            }
+        }
+        &-nav {
+            padding: 0 11px;
+        }
+        &-link {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.15px;
+            color: $color-tangaroa;
+            transition: all .5s;
+            &:hover {
+                color: $color-tundora;
+            }
+        }
+        &-img {
+            max-width: 18px;
+        }
+    }
+}
+
+.banner {
+    &__title {
+        font-size: 56px;
+        line-height: 56px;
+        max-width: 583px;
+        margin-bottom: 48px;
+    }
+}
