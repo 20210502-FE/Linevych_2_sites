@@ -1,42 +1,43 @@
 .promise {
     background-color: $color-wild-sand;
     padding-bottom: 122px;
+
     &__title {
         margin-bottom: 68px;
     }
-    &__items {
-        
-    }
+
     &__item {
+        width: 340px;
         padding-left: 86px;
         position: relative;
+
         &-first::before {
-            content: '';
+            content: url(../assets/images/promise-img-first.png);
             width: 63px;
             height: 63px;
             position: absolute;
-            background-image: url(../assets/images/promise-img-first.png);
             top: 0;
             left: 0;
         }
+
         &-second::before {
-            content: '';
+            content: url(../assets/images/promise-img-second.png);
             width: 63px;
             height: 63px;
             position: absolute;
-            background-image: url(../assets/images/promise-img-second.png);
             top: 0;
             left: 0;
         }
+
         &-third::before {
-            content: '';
+            content: url(../assets/images/promise-img-third.png);
             width: 63px;
             height: 63px;
             position: absolute;
-            background-image: url(../assets/images/promise-img-third.png);
             top: 0;
             left: 0;
         }
+        
         &-title {
             margin-bottom: 20px;
         }

@@ -22,6 +22,10 @@
     justify-content: space-around;
 }
 
+
+.flex_space-evenly {
+    justify-content: space-evenly;
+}
 .flex_center {
     justify-content: center;
 }
@@ -71,11 +75,11 @@
     max-width: 100%;
 }
 
-.position_relative{
+.relative{
     position: relative;
 }
 
-.position_absolute{
+.absolute{
     position: absolute;
 }
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Service</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <div class="header__top">
                 <div class="header__top-content flex flex_space-between">
                     <div class="header__logo">
-                        <img class="logo" src="assets/images/logo.png" alt="logo">
+                        <a href="/"><img class="logo" src="assets/images/logo.png" alt="logo"></a>
                     </div>
                     <div class="flex flex_self-center">
                         <div class="header__service header__service-hours">
@@ -26,17 +26,18 @@
                         <div class="header__service header__service-call">
                             <div class="header__service-item uppercase">
                                 CALL US</div>
-                            <div class="header__service-item"><a class="header__service-item_tel" href="555">(555)</a>
+                            <div class="header__service-item"><a class="header__service-item_tel"
+                                    href="tel:555">(555)</a>
                                 Car-Repair
                             </div>
                         </div>
                         <div class="header__button flex flex_align-center">
-                            <a class="button header__button-link uppercase" href="#">Make an Appointment</a>
+                            <a class="button uppercase" href="#">Make an Appointment</a>
                         </div>
                     </div>
                 </div>
-                <nav class="header__menu flex flex_space-between flex_align-center">
-                    <ul class="header__items flex">
+                <div class="header__menu flex flex_space-between flex_align-center flex_wrap">
+                    <ul class="header__list flex flex_wrap">
                         <li class="header__item"><a class="header__item-link header__item-arrow" href="#">Services</a>
                         </li>
                         <li class="header__item"><a class="header__item-link" href="#">Specials</a></li>
@@ -45,31 +46,32 @@
                         <li class="header__item"><a class="header__item-link header__item-arrow" href="#">Shop</a></li>
                         <li class="header__item"><a class="header__item-link" href="#">About</a></li>
                     </ul>
-                    <ul class="header__items flex">
-                        <li class="header__item-nav"><a class="header__item-link" href="#"><img class="header__item-img"
-                                    src="assets/icons/header-search.png" alt="search"></a></li>
-                        <li class="header__item-nav"><a class="header__item-link" href="#"><img class="header__item-img"
-                                    src="assets/icons/header-shopping.png" alt="shopping"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="banner">
-                <h1 class="title banner__title title_white">
-                    Top notch service is our main auto motive
-                </h1>
-                <div class="header__button flex flex_align-center">
-                    <a class="button header__button-link uppercase" href="#">Make an Appointment</a>
+                    <div class="header__list flex">
+                        <a class="header__item-link" href="#"><img class="header__item-img"
+                                src="assets/icons/header-search.png" alt="search"></a>
+                        <a class="header__item-link" href="#"><img class="header__item-img"
+                                src="assets/icons/header-shopping.png" alt="shopping"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <section class="banner">
+            <div class="container">
+                <h1 class="title banner__title title_white">
+                    Top notch service is our main auto motive
+                </h1>
+                <div class="flex flex_align-center">
+                    <a class="button uppercase" href="#">Make an Appointment</a>
+                </div>
+            </div>
+        </section>
         <section class="about">
             <div class="container">
                 <div class="about__inner">
-                    <div class="about__sup-title position_relative">
-                        <h6 class="sup-title uppercase">
+                    <div class="about__subtitle relative">
+                        <h6 class="subtitle uppercase">
                             Who we are
                         </h6>
                     </div>
@@ -90,11 +92,11 @@
         </section>
         <section class="promise">
             <div class="container">
-                <h6 class="sup-title position_relative uppercase">
+                <h6 class="subtitle relative uppercase">
                     OUR PROMISE TO YOU
                 </h6>
                 <h2 class="title promise__title">Sed perspiciatis omnis iste natus</h2>
-                <div class="flex flex_space-between">
+                <div class="flex flex_space-evenly flex_wrap">
                     <div class="promise__item promise__item-first">
                         <div class="title title_small promise__item-title">Quality service. Everytime.</div>
                         <div class="text promise__item-text">At vero eos et accusamus et iusto odio dignissimos ducimus
@@ -119,100 +121,121 @@
                     <h2 class="title title_white video__title">
                         Nemo enim ipsam voluptatem quia voluptas in proident
                     </h2>
-                    <div class="video__btn">
-                        <a href="#"><img class="video__btn-img" src="assets/images/video-button.png" alt="button"></a>
-                    </div>
+                    <button class="video__btn"><img class="video__btn-img" src="assets/images/video-button.png"
+                            alt="button"></button>
                 </div>
             </div>
         </section>
-        <section class="service position_relative">
-            <div class="position_relative"></div>
-            <div class="service_top"></div>
-            <div class="service_bottom"></div>
+        <section class="service">
+            <div class="service__img"></div>
             <div class="container">
-                <h6 class="sup-title position_relative uppercase">Our Services</h6>
+                <h6 class="subtitle relative uppercase">Our Services</h6>
                 <h2 class="title service__title">Sed perspiciatis omnis iste natus</h2>
-                <div class="service__items flex flex_space-between flex_wrap">
-                    <div class="service__item flex_basis-33">
-                        <img class="service__item-img" src="assets/images/service-1.png" alt="service-img">
-                        <div class="title title_small">Multi Point Inspections</div>
-                        <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.</div>
+                <div class="service__items flex flex_wrap">
+                    <div class="service__wrapper">
+                        <div class="service__item">
+                            <img class="service__item-img" src="assets/images/service-1.png" alt="service-img">
+                            <div class="title title_small">Multi Point Inspections</div>
+                            <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium corrupti quos dolores et quas.</div>
+                        </div>
                     </div>
-                    <div class="service__item flex_basis-33">
-                        <img class="service__item-img" src="assets/images/service-2.png" alt="service-img">
-                        <div class="title title_small">Auto Repair</div>
-                        <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.</div>
+                    <div class="service__wrapper">
+                        <div class="service__item">
+                            <img class="service__item-img" src="assets/images/service-2.png" alt="service-img">
+                            <div class="title title_small">Auto Repair</div>
+                            <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium corrupti quos dolores et quas.</div>
+                        </div>
                     </div>
-                    <div class="service__item flex_basis-33">
-                        <img class="service__item-img" src="assets/images/service-3.png" alt="service-img">
-                        <div class="title title_small">Auto Maintenance</div>
-                        <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.</div>
+                    <div class="service__wrapper">
+                        <div class="service__item">
+                            <img class="service__item-img" src="assets/images/service-3.png" alt="service-img">
+                            <div class="title title_small">Auto Maintenance</div>
+                            <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium corrupti quos dolores et quas.</div>
+                        </div>
                     </div>
-                    <div class="service__item flex_basis-33">
-                        <img class="service__item-img" src="assets/images/service-4.png" alt="service-img">
-                        <div class="title title_small">Tires </div>
-                        <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.</div>
+                    <div class="service__wrapper">
+                        <div class="service__item">
+                            <img class="service__item-img" src="assets/images/service-4.png" alt="service-img">
+                            <div class="title title_small">Tires </div>
+                            <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium corrupti quos dolores et quas.</div>
+                        </div>
                     </div>
-                    <div class="service__item flex_basis-33">
-                        <img class="service__item-img" src="assets/images/service-5.png" alt="service-img">
-                        <div class="title title_small">Service Warranty </div>
-                        <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.</div>
+                    <div class="service__wrapper">
+                        <div class="service__item">
+                            <img class="service__item-img" src="assets/images/service-5.png" alt="service-img">
+                            <div class="title title_small">Service Warranty </div>
+                            <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium corrupti quos dolores et quas.</div>
+                        </div>
                     </div>
-                    <div class="service__item flex_basis-33">
-                        <img class="service__item-img" src="assets/images/service-6.png" alt="service-img">
-                        <div class="title title_small">Shop Online</div>
-                        <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium corrupti quos dolores et quas.</div>
+                    <div class="service__wrapper">
+                        <div class="service__item">
+                            <img class="service__item-img" src="assets/images/service-6.png" alt="service-img">
+                            <div class="title title_small">Shop Online</div>
+                            <div class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis
+                                praesentium corrupti quos dolores et quas.</div>
+                        </div>
                     </div>
                 </div>
-                <div class="header__button flex flex_center flex_align-center">
-                    <a class="button header__button-link uppercase" href="#">Learn More</a>
+                <div class="flex flex_center flex_align-center">
+                    <a class="button uppercase" href="#">Learn More</a>
                 </div>
             </div>
+            <div class="service__img-bottom"></div>
         </section>
-        <section class="appointment position_relative">
-            <div class="appointment_top"></div>
-            <div class="appointment_bottom"></div>
+        <section class="appointment">
+            <div class="appointment__img"></div>
+            <div class="appointment__img-bottom"></div>
             <div class="container">
                 <div class="flex">
-                    <div class="appointment__form flex_basis-50">
-                        <h2 class="title appointment__title">
+                    <div class="appointment__form">
+                        <h2 class="title appointment__title text-center">
                             Make an appointment
                         </h2>
-                        <form class="form flex flex_wrap flex_center" action="#" method="get">
-                            <div class="flex_basis-50">
-                                <input class="form__item form__item-book" type="text" name="username" placeholder="Name"
-                                    required>
+                        <form class="form flex flex_wrap flex_center" action="#" method="POST">
+                            <div class="form__wrapper">
+                                <label>
+                                    <input class="form__item form__item-book" type="text" name="username"
+                                        placeholder="Name" required>
+                                </label>
                             </div>
-                            <div class="flex_basis-50">
-                                <input class="form__item form__item-book" type="text" name="email" placeholder="Email"
-                                    required>
+                            <div class="form__wrapper">
+                                <label>
+                                    <input class="form__item form__item-book" type="text" name="email"
+                                        placeholder="Email" required>
+                                </label>
                             </div>
-                            <div class="flex_basis-50">
-                                <input class="form__item form__item-book" type="number" name="tel" placeholder="Phone"
-                                    required>
+                            <div class="form__wrapper">
+                                <label>
+                                    <input class="form__item form__item-book" type="number" name="tel"
+                                        placeholder="Phone" required>
+                                </label>
                             </div>
-                            <div class="flex_basis-50">
-                                <select class="form__item" name="service" required>
-                                    <option value="" disabled selected>Select Service</option>
-                                    <option value="service">Service</option>
-                                    <option value="service">Service</option>
-                                    <option value="service">Service</option>
-                                </select>
+                            <div class="form__wrapper">
+                                <label>
+                                    <select class="form__item" name="service" required>
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="service">Service</option>
+                                        <option value="service">Service</option>
+                                        <option value="service">Service</option>
+                                    </select>
+                                </label>
                             </div>
-                            <div class="flex_basis-100">
-                                <textarea class="form__item form__item-message" type="text"
-                                    placeholder="Tell us about the car needing service(s)"></textarea>
+                            <div class="form__wrapper flex_basis-100">
+                                <label>
+                                    <textarea class="form__item form__item-message" type="text"
+                                        placeholder="Tell us about the car needing service(s)"></textarea>
+                                </label>
                             </div>
                             <button class="button appointment__button" type="submit">Make an Appointment</button>
                         </form>
                     </div>
-                    <div class="flex_basis-50 text-center flex_self-center">
+                    <div class="text-center flex_self-center">
                         <h2 class="title title_white appointment__title">
                             Maxime placeat facere possimus omnis
                         </h2>
@@ -226,17 +249,17 @@
                 </div>
             </div>
         </section>
-        <section class="check position_relative">
+        <section class="check">
             <div class="container">
                 <div class="check__inner">
-                    <h6 class="sup-title position_relative uppercase">GALLERY & LIVE STREAMS</h6>
+                    <h6 class="subtitle relative uppercase">GALLERY & LIVE STREAMS</h6>
                     <h2 class="title check__title">Check out our hard workers</h2>
                     <nav>
-                        <ul class="ckeck__items flex">
-                            <li class="check__item"><a class="check__item-link" href="#">Gallery</a></li>
-                            <li class="check__item"><a class="check__item-link" href="#">Live stream: Bay 1</a></li>
-                            <li class="check__item"><a class="check__item-link" href="#">Live stream: Bay 2</a></li>
-                            <li class="check__item"><a class="check__item-link" href="#">Live stream: Bay 3</a></li>
+                        <ul class="check__list flex">
+                            <li class="check__stream"><a class="check__link" href="#">Gallery</a></li>
+                            <li class="check__stream"><a class="check__link" href="#">Live stream: Bay 1</a></li>
+                            <li class="check__stream"><a class="check__link" href="#">Live stream: Bay 2</a></li>
+                            <li class="check__stream"><a class="check__link" href="#">Live stream: Bay 3</a></li>
                         </ul>
                     </nav>
                     <div class="check__content">
@@ -249,7 +272,7 @@
             <div class="container">
                 <div class="comment__items flex">
                     <div class="comment__titles flex_basis-33">
-                        <h6 class="sup-title position_relative uppercase">GALLERY & LIVE STREAMS</h6>
+                        <h6 class="subtitle relative uppercase">GALLERY & LIVE STREAMS</h6>
                         <h2 class="title">Check out our hard workers</h2>
                     </div>
                     <div class="comment__item flex_basis-33">
@@ -281,7 +304,7 @@
             <div class="container">
                 <div class="impact__content">
                     <img class="impact__img" src="assets/images/impact-img.jpg" alt="car">
-                    <h6 class="sup-title sup-title_white position_relative uppercase ">OUR IMPACT</h6>
+                    <h6 class="subtitle subtitle_white relative uppercase ">OUR IMPACT</h6>
                     <h2 class="title title_white impact__title">Nemo enim ipsam voluptatem quia voluptas</h2>
                     <div class="flex flex_space-between">
                         <div class="impact__item flex">
@@ -335,8 +358,8 @@
                         <div class="impact__info-title">
                             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         </div>
-                        <div class="header__button flex flex_align-center">
-                            <a class="button header__button-link uppercase" href="#">Make an Appointment</a>
+                        <div class="flex flex_align-center">
+                            <a class="button uppercase" href="#">Make an Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -365,20 +388,16 @@
                 </div>
                 <div class="footer__box footer-links flex_basis-33">
                     <div class="footer__title uppercase">EXPLORE LINKS</div>
-                    <div class="footer__list flex">
-                        <ul class="footer__items">
-                            <li class="footer__item"><a class="footer__item-link" href="#">About</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Services</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Specials</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Estimates</a></li>
-                        </ul>
-                        <ul class="footer__items">
-                            <li class="footer__item"><a class="footer__item-link" href="#">Reviews</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Shop</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Careers</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">FAQs</a></li>
-                        </ul>
-                    </div>
+                    <ul class="footer__menu flex">
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">About</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Services</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Specials</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Estimates</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Reviews</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Shop</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Careers</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQs</a></li>
+                    </ul>
                 </div>
                 <div class="footer__box footer__contact flex_basis-33">
                     <div class="footer__title uppercase">CONTACT</div>
@@ -392,26 +411,25 @@
                                 765-4321</a></li>
                         <li class="footer__contact-item footer__contact-mail"><a class="footer__contact-link"
                                 href="mailto:Info@company.com">Info@company.com</a></li>
-                        <li class="footer__contact-item footer__contact-time"><a class="footer__contact-link"
-                                href="#">Mon - Sat: 7:000 am -
-                                6:00 pm</a></li>
+                        <li class="footer__contact-item footer__contact-time">Mon - Sat: 7:00 am -
+                            6:00 pm</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer__bottom">
+        <div class="footer__copyrights">
             <div class="container">
                 <div class="flex flex_space-between">
-                    <div class="footer__bottom-text">
+                    <div class="footer__copyrights-text">
                         Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
                     </div>
                     <div class="flex">
-                        <div class="footer__bottom-year">
+                        <div class="footer__copyrights-year">
                             © 2018 Company.
                         </div>
-                        <div class="footer__bottom-links">
-                            <a class="footer__bottom-link" href="#">Privacy Policy</a>
-                            <a class="footer__bottom-link" href="#">Terms & Conditions</a>
+                        <div class="footer__privacy">
+                            <a class="footer__privacy-link" href="#">Privacy Policy</a>
+                            <a class="footer__privacy-link" href="#">Terms & Conditions</a>
                         </div>
                     </div>
                 </div>

@@ -2,15 +2,21 @@
     background-image: url(../assets/images/video-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    height: 500px;
+
     &_height {
         height: 100%;
     }
+
     &__title {
         max-width: 411px;
     }
+
     &__btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
         &-img {
             max-width: 140px;
         }  

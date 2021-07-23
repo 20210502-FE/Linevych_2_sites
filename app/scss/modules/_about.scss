@@ -1,6 +1,7 @@
 .about {
     background-color: $color-wild-sand;
-    padding-bottom: 230px;
+    padding-bottom: 140px;
+
     &__inner {
         background-image: url(../assets/images/promise-bg.jpg);
         background-position: center;
@@ -13,13 +14,16 @@
         position: relative;
         top: -80px;
     }
+
     &__title {
         max-width: 583px;
         margin-bottom: 36px;
     }
+
     &__text {
         margin-bottom: 54px;
     }
+    
     &__img {
         max-width: 846px;
     }

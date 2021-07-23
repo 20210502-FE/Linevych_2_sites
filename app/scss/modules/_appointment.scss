@@ -1,8 +1,9 @@
 .appointment {
     padding: 130px 0 210px;
     background-color: $color-tangaroa;
-    z-index: -2;
-    &_top {
+    position: relative;
+
+    &__img {
         position: absolute;
         width: 642px;
         height: 450px;
@@ -10,32 +11,36 @@
         background-repeat: no-repeat;
         top: 0;
         right: 0;
-        z-index: -1;
+
+        &-bottom {
+            position: absolute;
+            width: 642px;
+            height: 450px;
+            background-image: url(../assets/images/appointment-bottom-left.png);
+            background-repeat: no-repeat;
+            bottom: 0;
+            left: 0;
+        }
     }
-    &_bottom {
-        position: absolute;
-        width: 642px;
-        height: 450px;
-        background-image: url(../assets/images/appointment-bottom-left.png);
-        background-repeat: no-repeat;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-    }
+
     &__form {
         padding: 76px 57px;
         background-color: $color-white;
+        max-width: 585px;
     }
+
     &__title {
         line-height: 36px;
         margin-bottom: 43px;
     }
+
     &__num {
         font-size: 96px;
-        line-height: 56px;
+        line-height: 76px;
         color: $color-milano-red;
         margin-bottom: 46px;
     }
+
     &__text {
         font-family: $font-bold;
         font-style: normal;
@@ -44,10 +49,17 @@
         line-height: 26px;
         color: $color-white;
     }
+
+    &__button {
+        border: none;
+    }
 }
 
 .form {
+    margin: -11px;
+
     &__item {
+        width: 224px;
         padding: 17px 24px 15px;
         font-family: $font-normal;
         font-style: normal;
@@ -55,8 +67,17 @@
         font-size: 16px;
         line-height: 24px;
         color: $color-dusty-grey;
+        background-color: $color-wild-sand;
+        border: none;
+        
         &-message {
             resize: none;
+            width: 100%;
+            height: 180px;
         }
+    }
+
+    &__wrapper {
+        padding: 11px;
     }
 }
