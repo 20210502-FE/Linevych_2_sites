@@ -22,9 +22,18 @@
     justify-content: space-around;
 }
 
+
+.flex_space-evenly {
+    justify-content: space-evenly;
+}
 .flex_center {
     justify-content: center;
 }
+
+.flex_end {
+    justify-content: flex-end;
+}
+
 
 .flex_column {
     flex-direction: column;
@@ -34,12 +43,21 @@
     align-self: flex-start;
 }
 
+.flex_self-center {
+    align-self: center;
+}
+
 .flex_wrap {
     flex-wrap: wrap;
 }
 
 .flex_nowrap {
     flex-wrap: nowrap;
+}
+
+.flex_basis-25 {
+    flex-basis: 25%;
+    max-width: 25%;
 }
 
 .flex_basis-33 {
@@ -55,6 +73,14 @@
 .flex_basis-100 {
     flex-basis: 100%;
     max-width: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
 }
 
 .text-center {

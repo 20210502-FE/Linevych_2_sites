@@ -1,0 +1,184 @@
+.footer {
+    background-color: $color-wild-sand;
+
+    &__inner {
+        padding: 160px 0 98px;
+        margin: 0 -62px;
+    }    
+
+    &__box {
+        padding: 0 62px;
+    }
+
+    &__logo {
+        max-width: 174px;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        font-family: $font-normal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-tundora;
+        margin-bottom: 33px;
+    }
+
+    &__social {
+
+        &-link {
+            margin-right: 18px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 28px;
+        font-family: $font-bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: $color-tundora;
+    }
+
+    &__menu {
+        margin: 0 -60px;
+        flex-wrap: wrap;
+        
+        &-item {
+            width: 50%;
+        }
+
+        &-link {
+        font-family: $font-bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: $color-tundora;
+        margin: 0 60px 20px;
+        transition: all .5s;
+
+            &:hover {
+                color: $color-tangaroa;
+            }
+        }
+    }
+
+    &__contact {
+
+        &-item {
+            padding-left: 34px;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        &-location::before {
+            content: url(../assets/images/location.svg);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+
+        &-tel::before {
+            content: url(../assets/images/phone.svg);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+
+        &-mail::before {
+            content: url(../assets/images/mail.svg);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+
+        &-time {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.15px;
+            color: $color-tundora;
+
+            &::before {
+                content: url(../assets/images/time.svg);
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 3px;
+                left: 0;
+            }
+        }
+
+        &-link {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.15px;
+            color: $color-tundora;
+            transition: all .5s;
+
+            &:hover {
+                color: $color-tangaroa;
+            }
+        }
+    }
+
+    &__copyrights {
+        background-color: $color-tangaroa;
+        padding: 23px 0 19px;
+
+        &-text {
+            font-family: $font-normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.15px;
+            color: $color-dusty-grey;
+        }
+
+        &-year {
+            font-family: $font-normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.15px;
+            color: $color-dusty-grey;
+            margin-right: 10px;
+        }
+    }
+
+    &__privacy {
+
+        &-link {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.15px;
+            color: $color-dusty-grey;
+
+            &:first-child {
+                padding-right: 5px;
+                border-right: 1px solid $color-dusty-grey;
+            }
+        }
+    }
+}

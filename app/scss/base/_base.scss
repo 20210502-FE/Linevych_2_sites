@@ -25,9 +25,70 @@ img {
     max-width: 1050px;
     padding: 0 15px;
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
 }
 
 body {
     overflow-x: hidden;
 }
 
+.logo {
+    max-width: 174px;
+}
+
+.title {
+    font-family: $font-bold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: $color-tangaroa;
+
+    &_white {
+        color: $color-white;
+    }
+    &_small {
+        font-size: 19px;
+        line-height: 26px;
+    }
+}
+
+.subtitle {
+    font-family: $font-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    color: $color-tundora;
+    padding-left: 36px;
+    margin-bottom: 33px;
+
+    &_white {
+        color: $color-white;
+    }
+
+    &::before {
+        content: url(../assets/icons/sup-title.svg);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;  
+    }
+}
+
+.text {
+    font-family: $font-normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $color-tundora;
+    
+    &_white {
+        color: $color-white;
+    }
+}
